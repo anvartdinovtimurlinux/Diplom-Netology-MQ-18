@@ -256,8 +256,11 @@ html {
 .athlets-players p {
   margin-top: 26px;
   
-
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: #000000;
+}
+
+.athlets-players li:nth-child(3) p {
+  color: #ffffff;
 }
