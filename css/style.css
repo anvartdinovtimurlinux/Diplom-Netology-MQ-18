@@ -1,0 +1,263 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+
+  /* border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none; */
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+
+.wrapper {
+  z-index: 2;
+
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+}
+
+/* HEADER */
+
+.header {
+  position: relative;
+
+  padding-top: 33px;
+  padding-bottom: 84px;
+
+  color: #ffffff;
+
+  background-color: #0a0e34;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-image: url("../img/football_767.jpg");
+  opacity: 0.1;
+  background-size: cover;
+  background-position: center center;
+}
+
+.logo svg {
+  width: 133px;
+  height: 94px;
+}
+
+.header-slogan {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 137px;
+}
+
+.header-slogan-item {
+  display: block;
+
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.header-slogan-item:nth-child(1) {
+  align-self: flex-start;
+}
+
+.header-slogan-item:nth-child(2) {
+  width: 220px;
+  align-self: flex-end;
+  margin-top: calc(31px - (.18em));
+  margin-right: 15px;
+}
+
+.buttons {
+  margin-top: 90px;
+}
+
+.button {
+  display: flex;
+  align-items: center; 
+  width: 280px;
+  height: 35px;
+  padding-left: 82px;
+
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  background-color: #5e42b0;
+  border-radius: 17.5px;
+}
+
+.button:nth-child(1) {
+  margin-bottom: 14px;
+}
+
+.button svg {
+  width: 20px;
+  height: 24px;
+  margin-right: 9px;
+
+  fill: #ffffff;
+}
+
+
+/* ATHLETS & PLAYERS */
+
+.athlets-players {
+  position: relative;
+
+  padding-top: 20px;
+}
+
+.athlets::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 80px;
+
+  background-image: url("../img/footballer_192.png");
+  background-size: 192px 281px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.players::before {  
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 80px;
+
+  background-image: url("../img/basketballer_302.png");
+  background-size: 302px 248px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.athlets-players h2 {
+  align-self: flex-start;
+
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.athlets-players ol {
+  margin-top: 244px;
+}
+
+.athlets-players ol li {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 51px;
+}
+
+.athlets-players ol li:nth-child(1) {
+  padding-top: 83px;
+
+  background-color: #fafafa;
+}
+
+.athlets-players ol li:nth-child(2) {
+  background-color: #f5f4f9;
+}
+
+.athlets ol li:nth-child(3) {
+  background-color: #5e42b0;
+}
+
+.players ol li:nth-child(3) {
+  background-color: #090c35;
+}
+
+.athlets-players h3 {
+  position: relative;
+
+  margin-left: 25px;
+
+  font-size: 2.3rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
+
+.athlets-players h3::before {
+  position: absolute;
+  left: -25px;
+  top: 3;
+
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  color: #000000;
+
+  border-bottom: 4px solid #5e42b0;
+}
+
+.athlets-players li:nth-child(1) h3::before {
+  content: "01";
+}
+
+.athlets-players li:nth-child(2) h3::before {
+  content: "02";
+}
+
+.athlets li:nth-child(3) h3::before {
+  content: "03";
+
+  border-bottom: 4px solid #ffffff;
+}
+
+.players li:nth-child(3) h3::before {
+  content: "03";
+
+  color: #8765dd;
+
+  border-bottom: 4px solid #ffffff;
+}
+
+.athlets-players p {
+  margin-top: 26px;
+  
+
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #000000;
+}
