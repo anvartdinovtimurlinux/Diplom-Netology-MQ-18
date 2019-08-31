@@ -39,7 +39,7 @@ html {
 .header {
   position: relative;
 
-  padding-top: 33px;
+  /* padding-top: 33px; */
   padding-bottom: 84px;
 
   color: #ffffff;
@@ -75,7 +75,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 137px;
+  margin-top: 110px;
 }
 
 .header-slogan-item {
@@ -93,7 +93,7 @@ html {
 .header-slogan-item:nth-child(2) {
   width: 220px;
   align-self: flex-end;
-  margin-top: calc(31px - (.18em));
+  margin-top: 20px;
   margin-right: 15px;
 }
 
@@ -269,7 +269,7 @@ html {
 .to-do h3 {
   position: relative;
 
-  margin-top: 37px;
+  margin-top: 35px;
 
   font-weight: 700;
   font-size: 2.8rem;
@@ -336,8 +336,8 @@ html {
 .footer {
   position: relative;
 
-  padding-top: 33px;
-  padding-bottom: 84px;
+  padding-top: 99px;
+  padding-bottom: 10px;
 
   color: #ffffff;
 
@@ -360,8 +360,50 @@ html {
 } 
 
 .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-self: center;
   width: 72px;
   height: 74px;
+
+  background-color: #5339a0;
+  border-radius: 15px;
 }
 
+.footer-logo svg {
+  width: 50px;
+  
+  fill: #ffffff;
+}
+
+.footer-slogan {
+  margin-top: 59px;
+  text-align: center;
+}
+
+.footer-slogan-item {
+  display: block;
+
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.footer-slogan-item:nth-child(2) {
+  margin-top: 6px;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1em;
+  color: #9b8ec1;
+}
+
+.footer .buttons {
+  margin-top: 77px;
+}
+
+.footer .logo {
+  margin-top: 81px;
+}
