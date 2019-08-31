@@ -16,6 +16,10 @@ html {
   color: #000000;
 }
 
+body {
+  min-width: 320px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -26,12 +30,20 @@ html {
 .wrapper {
   z-index: 2;
 
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  width: 100%;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+h2, 
+h3, 
+.header-slogan-item,
+.button,
+.footer-slogan-item {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* HEADER */
@@ -39,7 +51,7 @@ html {
 .header {
   position: relative;
 
-  /* padding-top: 33px; */
+  padding-top: 33px;
   padding-bottom: 84px;
 
   color: #ffffff;
@@ -68,22 +80,20 @@ html {
 
 .logo svg {
   width: 133px;
-  height: 94px;
+  height: 36px;
 }
 
 .header-slogan {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 110px;
+  margin-top: 137px;
 }
 
 .header-slogan-item {
   display: block;
 
-  font-weight: 700;
   font-size: 2.8rem;
-  text-transform: uppercase;
 }
 
 .header-slogan-item:nth-child(1) {
@@ -113,10 +123,10 @@ html {
 
   font-weight: 400;
   font-size: 0.8rem;
-  text-transform: uppercase;
 
   background-color: #5e42b0;
   border-radius: 17.5px;
+  /* box-shadow: 0 25px 20px -5px #0A0C31;  применить для десктопной версии  */
 }
 
 .button:nth-child(1) {
@@ -129,6 +139,18 @@ html {
   margin-right: 9px;
 
   fill: #ffffff;
+}
+
+.button:hover {
+  color: #bdace3;
+
+  background: #4d3191;
+  transition: 0.3s;
+}
+
+.button:hover svg {
+  fill: #bdace3;
+  transition: 0.3s;
 }
 
 
@@ -171,10 +193,8 @@ html {
 .athlets-players h2 {
   align-self: flex-start;
 
-  font-weight: 700;
   font-size: 5rem;
   line-height: 1em;
-  text-transform: uppercase;
   color: #e7e7e7;
 }
 
@@ -213,7 +233,6 @@ html {
 
   font-size: 2.3rem;
   line-height: 1em;
-  text-transform: uppercase;
   color: #c1c1c1;
 }
 
@@ -271,10 +290,8 @@ html {
 
   margin-top: 35px;
 
-  font-weight: 700;
   font-size: 2.8rem;
   line-height: 1em;
-  text-transform: uppercase;
   color: #e7e7e7;
 }
 
@@ -294,7 +311,6 @@ html {
   width: 70px;
   height: 70px;
 
-  font-weight: 700;
   font-size: 1.4rem;
   line-height: 70px;
   text-align: center;
@@ -360,6 +376,8 @@ html {
 } 
 
 .footer-logo {
+  z-index: 2;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,6 +386,7 @@ html {
   height: 74px;
 
   background-color: #5339a0;
+  background-image: linear-gradient(to bottom, #7c58de, #493a8d); 
   border-radius: 15px;
 }
 
@@ -375,6 +394,11 @@ html {
   width: 50px;
   
   fill: #ffffff;
+}
+
+.footer-logo:hover {
+  background-image: linear-gradient(to bottom, #493a8d, #7c58de);
+  transition: 0.3s;
 }
 
 .footer-slogan {
@@ -385,10 +409,8 @@ html {
 .footer-slogan-item {
   display: block;
 
-  font-weight: 700;
   font-size: 3.2rem;
   line-height: 1em;
-  text-transform: uppercase;
 }
 
 .footer-slogan-item:nth-child(2) {
@@ -406,4 +428,14 @@ html {
 
 .footer .logo {
   margin-top: 81px;
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+  
+
+
+
+
+
 }
