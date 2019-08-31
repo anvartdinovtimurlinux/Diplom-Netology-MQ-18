@@ -7,14 +7,6 @@
   color: inherit;
   text-decoration: none;
   list-style: none;
-
-  /* border:none;
-  background-image:none;
-  background-color:transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: none; */
 }
 
 html {
@@ -39,7 +31,6 @@ html {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-width: 320px;
 }
 
@@ -56,7 +47,7 @@ html {
   background-color: #0a0e34;
 }
 
-.header::after {
+.header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -69,6 +60,10 @@ html {
   opacity: 0.1;
   background-size: cover;
   background-position: center center;
+}
+
+.logo {
+  align-self: center;
 }
 
 .logo svg {
@@ -103,12 +98,15 @@ html {
 }
 
 .buttons {
+  z-index: 2;
+
+  align-self: center;
   margin-top: 90px;
 }
 
 .button {
   display: flex;
-  align-items: center; 
+  align-items: center;
   width: 280px;
   height: 35px;
   padding-left: 82px;
@@ -156,7 +154,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.players::before {  
+.players::before {
   content: "";
   position: absolute;
 
@@ -255,7 +253,7 @@ html {
 
 .athlets-players p {
   margin-top: 26px;
-  
+
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: #000000;
@@ -264,3 +262,106 @@ html {
 .athlets-players li:nth-child(3) p {
   color: #ffffff;
 }
+
+
+/* TO-DO */
+
+.to-do h3 {
+  position: relative;
+
+  margin-top: 37px;
+
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.to-do p {
+  margin-top: 22px;
+  margin-bottom: 77px;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+.to-do h3::before {
+  position: absolute;
+  top: -95px;
+
+  width: 70px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #5e42b0;
+}
+
+.to-do li:nth-child(1) h3::before {
+  content: "01";
+}
+
+.to-do li:nth-child(2) h3::before {
+  content: "02";
+}
+
+.to-do li:nth-child(3) h3::before {
+  content: "03";
+
+  border-bottom: 4px solid #ffffff;
+}
+
+.to-do h3::after {
+  content: "";
+  position: absolute;
+  top: -49px;
+  left: 27px;
+
+  width: 15px;
+  height: 4px;
+
+  background-color: #8f7bc8;
+  border-radius: 2px;
+}
+
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+
+  padding-top: 33px;
+  padding-bottom: 84px;
+
+  color: #ffffff;
+
+  background-color: #0a0e34;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  background-image: url("../img/game_767.jpg");
+  opacity: 0.1;
+  background-size: cover;
+  background-position: center center;
+} 
+
+.footer-logo {
+  align-self: center;
+  width: 72px;
+  height: 74px;
+}
+
