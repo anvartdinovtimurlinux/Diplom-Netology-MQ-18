@@ -37,8 +37,8 @@ body {
   padding-right: 6.25%;
 }
 
-h2, 
-h3, 
+h2,
+h3,
 .header-slogan-item,
 .button,
 .footer-slogan-item {
@@ -373,7 +373,7 @@ h3,
   opacity: 0.1;
   background-size: cover;
   background-position: center center;
-} 
+}
 
 .footer-logo {
   z-index: 2;
@@ -386,13 +386,13 @@ h3,
   height: 74px;
 
   background-color: #5339a0;
-  background-image: linear-gradient(to bottom, #7c58de, #493a8d); 
+  background-image: linear-gradient(to bottom, #7c58de, #493a8d);
   border-radius: 15px;
 }
 
 .footer-logo svg {
   width: 50px;
-  
+
   fill: #ffffff;
 }
 
@@ -432,10 +432,60 @@ h3,
 
 
 @media (min-width: 641px) and (max-width: 960px) {
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding-top: 40px;
+    padding-bottom: 91px;
+  }
+
+  .header::before {
+    background-image: url("../img/football_1280.jpg");
+  }
+
+  .logo svg {
+    width: 205px;
+    height: 56px;
+  }
+
+  .header-slogan {
+    margin-top: 181px;
+  }
+
+  .header-slogan-item {
+    font-size: 6.4rem;
+  }
+
+  .header-slogan-item:nth-child(1) {
+    align-self: flex-start;
+  }
   
+  .header-slogan-item:nth-child(2) {
+    width: 500px;
+  }
 
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
+  .button {
+    width: 311px;
+    height: 77px;
+    padding-left: 82px;
+  
+    font-weight: 400;
+    font-size: 0.8rem;
+  
+    background-color: #5e42b0;
+    border-radius: 17.5px;
+    box-shadow: 0 25px 20px -5px #0A0C31; 
+  }
 
-
-
-}
+  }
