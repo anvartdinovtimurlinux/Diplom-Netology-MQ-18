@@ -209,8 +209,6 @@ h3,
 }
 
 .athlets-players ol li:nth-child(1) {
-  padding-top: 83px;
-
   background-color: #fafafa;
 }
 
@@ -329,8 +327,6 @@ h3,
 
 .to-do li:nth-child(3) h3::before {
   content: "03";
-
-  border-bottom: 4px solid #ffffff;
 }
 
 .to-do h3::after {
@@ -464,7 +460,7 @@ h3,
   .header-slogan-item:nth-child(1) {
     align-self: flex-start;
   }
-  
+
   .header-slogan-item:nth-child(2) {
     width: 500px;
   }
@@ -478,14 +474,184 @@ h3,
   .button {
     width: 311px;
     height: 77px;
-    padding-left: 82px;
-  
-    font-weight: 400;
-    font-size: 0.8rem;
-  
+    padding-left: 41px;
+
+    font-size: 1.4rem;
+
     background-color: #5e42b0;
-    border-radius: 17.5px;
-    box-shadow: 0 25px 20px -5px #0A0C31; 
+    border-radius: 38px;
+    box-shadow: 0 25px 20px -5px #0A0C31;
   }
 
+  .button:nth-child(2) {
+    padding-left: 57px;
   }
+
+  .button svg {
+    width: 36px;
+    height: 41px;
+    margin-right: 28px;
+  }
+
+
+  /* ATHLETS & PLAYERS */
+
+  .athlets-players {
+    padding-top: 87px;
+  }
+
+  .athlets::before {
+    top: 95px;
+    right: 38%;
+
+    background-image: url("../img/footballer_497.png");
+    background-size: 497px 699px;
+  }
+
+  .players::before {
+    width: 436px;
+    top: 80px;
+    right: 0;
+
+    background-image: url("../img/basketballer_436.png");
+    background-size: 436px 565px;
+  }
+
+  .athlets .wrapper {
+    padding-left: 38%;
+  }
+
+  .players .wrapper {
+    padding-right: 38%;
+  }
+
+  .athlets-players h2 {
+    font-size: 8rem;
+  }
+
+  .athlets-players ol {
+    margin-top: 20px;
+  }
+
+  .athlets-players ol li {
+    padding-top: 42px;
+    padding-bottom: 36px;
+  }
+
+  .athlets-players ol li:nth-child(1) {
+    background-color: #ffffff;
+  }
+
+  .athlets-players h3 {
+    margin-left: 32px;
+
+    font-size: 3.2rem;
+  }
+
+  .athlets-players h3::before {
+    left: -32px;
+    top: 3;
+
+    font-size: 1.8rem;
+    line-height: 1.2em;
+
+    border-bottom: 4px solid #5e42b0;
+  }
+
+  .athlets li:nth-child(3) h3::before {
+    border-bottom: 4px solid #ffffff;
+  }
+
+  .players li:nth-child(3) h3::before {
+    border-bottom: 4px solid #ffffff;
+  }
+
+  .athlets-players p {
+    margin-top: 26px;
+
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+
+  /* TO-DO */
+
+  .to-do h3 {
+    margin-top: 82px;
+
+    font-size: 8rem;
+  }
+
+  .to-do p {
+    margin-top: 37px;
+    margin-bottom: 100px;
+
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  .to-do h3::before {
+    top: -170px;
+
+    width: 116px;
+    height: 116px;
+
+    font-size: 2.4rem;
+    line-height: 116px;
+  }
+
+  .to-do h3::after {
+    top: -95px;
+    left: 44px;
+
+    width: 25px;
+    height: 5px;
+
+    border-radius: 2.5px;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding-top: 126px;
+    padding-bottom: 24px;
+  }
+
+  .footer::before {
+    background-image: url("../img/game_1280.jpg");
+  }
+
+  .footer-logo {
+    width: 130px;
+    height: 137px;
+
+    border-radius: 35px;
+  }
+
+  .footer-logo svg {
+    width: 100px;
+  }
+
+  .footer-slogan {
+    margin-top: 83px;
+  }
+
+  .footer-slogan-item {
+    font-size: 8rem;
+  }
+
+  .footer-slogan-item:nth-child(2) {
+    margin-top: 27px;
+
+    font-size: 3.6rem;
+  }
+
+  .footer .buttons {
+    margin-top: 287px;
+  }
+
+  .footer .logo {
+    margin-top: 55px;
+  }
+}
