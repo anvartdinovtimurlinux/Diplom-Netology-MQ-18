@@ -843,8 +843,9 @@ h3,
 
   .to-do img {
     min-height: 730px;
+    height: 100%;
 
-    object-fit: cover;
+    object-fit: cover;  
   }
 
   .to-do .wrapper {
